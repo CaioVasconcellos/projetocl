@@ -1,0 +1,87 @@
+.contact {
+    height: 100vh; /* Altura total da tela */
+}
+
+.contact__form {
+    display: flex; /* Usando flexbox */
+    max-width: 100%;
+    justify-content: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin: 0;
+}
+
+.contact__content {
+    display: grid; /* Usando grid para o conteúdo */
+    gap: 10px; /* Reduzindo o espaçamento entre os inputs */
+    max-width: 350px; /* Largura máxima para telas grandes */
+    width: 100%; /* Largura total para telas menores */
+    background-color: #7b6ba3; /* Fundo roxo claro */
+    padding: 30px; /* Padding ao redor do conteúdo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    margin: auto; /* Centraliza o conteúdo */
+}
+
+.contact__input {
+    width: 100%; /* Largura total para os inputs */
+    padding: 1rem; /* Padding interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Sem bordas */
+    outline: none; /* Remove o contorno padrão */
+    background-color: #fff; /* Fundo branco para inputs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    transition: box-shadow 0.3s ease-in-out; /* Transição suave */
+}
+
+.contact__input:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Destaque maior no foco */
+}
+
+.contact__button {
+    width: 100%; /* Largura total para o botão */
+    padding: 1rem; /* Padding interno */
+    font-size: 16px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    background-color: #443c67; /* Fundo roxo escuro */
+    border: none; /* Sem bordas */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.contact__button:hover {
+    background-color: #372a53; /* Escurecer o botão ao passar o mouse */
+}
+
+/* Adicionando estilo aos títulos */
+.contact .section__title {
+    color: var(--white-color); /* Cor dos títulos */
+}
+
+/* Media Queries para Responsividade */
+
+
+@media (min-width: 768px) {
+    .contact__content {
+        max-width: 70%; /* Aumenta a largura máxima em telas menores */
+    }
+
+    .contact__input, .contact__button {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        padding: 0.8rem; /* Reduz o padding dos inputs e botão */
+    }
+}
+
+@media (min-width: 1150px) {
+  
+    .contact__content {
+        max-width: 1000px; /* Aumenta a largura máxima para telas grandes */
+        width: 90%; /* Largura total com margem para o lado */
+        margin: auto; /* Centraliza o conteúdo na tela */
+    }
+
+    .contact__input, .contact__button {
+        font-size: 18px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+        padding: 0.8rem; /* Aumenta o padding dos inputs e botão */
+    }
+}

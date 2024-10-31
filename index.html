@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/extends.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <script src="src/components/Service.js" defer></script>
+    <script src="src/components/Projects.js" defer></script>
+    <script src="src/components/PlanCard.js" defer></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img class="nav__logo" src="/assets/LOGO-4.png" alt="">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Ínicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projetos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#plan" class="nav__link">Planos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
+            <div>
+                <i class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-line"></i>
+                </i>
+            </div>
+
+
+        </nav>
+    </header>
+    <main class="main">
+
+        <section class="home section" id="home">
+
+            <!-- <img class="background__img" src="/assets/Design_sem_nome_no_bg.png" alt=""> -->
+
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Olá! Eu sou <br>
+                            <span class="home__name-color"> Carolina Lopes</span>
+                            Especialista em Neuroarquitetura
+                        </h1>
+
+                        <p class="home__description">
+                            Sou Carolina, arquiteta e urbanista, CEO do Lina Arquitetura. Graduada pela UFC e especialista em Neuroarquitetura pelo IPOG, atuo há mais de 5 anos no desenvolvimento de projetos residenciais e corporativos, do conceito ao acompanhamento de obra. Minha especialização permite criar espaços que promovem bem-estar e estímulos positivos para seus usuários.                        </p>
+
+                        <div class="home__buttons">
+                            <a href="#footer" class="button">Contato</a>
+
+                            <a href="#projects" class="button__link">
+                                <span>Ver projetos</span>
+                                <i class="ri-arrow-right-line button__icon"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="home__social">
+                        <a href="https://wa.me/558598251303" target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="mailto: arquitetura.carolinalopes@gmail.com" target="_blank" class="home__social-link">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__social-mobile">
+                        <a href="https://wa.me/558598251303" target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="mailto: arquitetura.carolinalopes@gmail.com" target="_blank" class="home__social-link">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                    </div>
+                    <img class="home__img-1" src="/assets/foto1.png" alt="">
+                    <img class="home__img-2" src="/assets/foto2.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="service" id="service">
+
+            <span class="section__subtitle">NOSSOS SERVIÇOS</span>
+            <h2 class="section__title">Clique em "Saiba mais" <br> Para mais Informações</h2>
+            <button class="pre-btn"><i class="ri-arrow-left-circle-line"></i></button>
+            <button class="nxt-btn"><i class="ri-arrow-right-circle-line"></i></button>
+
+            <div class="service__data">
+                <div class="content">
+
+                    <service-card class="service-card" img="assets/foto-cama.jpg" title="Levantamento"
+                        text="Conferir medidas e o estado atual de um ambiente."
+                        ref="https://www.instagram.com/stories/highlights/17844086058174052/">
+                    </service-card>
+                    <service-card class="service-card" img="assets/teste.png" title="Consultoria"
+                        text="Serviço de avaliação técnica profissional com o objetivo de otimizar o ambiente."
+                        ref="https://www.instagram.com/stories/highlights/17844086058174052/"></service-card>
+                    
+                    <service-card class="service-card" img="assets/service5.jpeg" title="Projeto de Interiores"
+                        text="Estudo detalhado de todos os elementos que compöem o espaço interno."
+                        ref="https://www.instagram.com/stories/highlights/17844086058174052/">
+                    </service-card>
+                    <service-card
+                        class="service-card" img="assets/service4.jpeg" title="Projeto de Arquitetura"
+                        text="Projeto mais importante de uma obra. Visa guiar uma construção ou reformar um imóvel."
+                        ref="https://www.instagram.com/stories/highlights/17844086058174052/">
+                    </service-card>
+                    <service-card
+                        class="service-card" img="assets/service4.jpeg" title="Regularização de Imóvel"
+                        text="Projeto mais importante de uma obra. Visa guiar uma construção ou reformar um imóvel."
+                        ref="https://www.instagram.com/stories/highlights/17844086058174052/">
+                    </service-card>
+
+                </div>
+
+                <div class="length-dots">
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="projects section" id="projects">
+
+            <span class="section__subtitle">NOSSOS PROJETOS</span>
+            <h2 class="section__title">Projetos Recentes <br> Clique Na Imagem <i class="ri-mouse-line"></i> <br>
+                Para a Transformação</h2>
+            <div class="projects__container container grid">
+                <div class="projects__content grid">
+
+                    <project-component class="project-component" img-one=" assets/quarto-antes.jpg"
+                        img-two="assets/quarto-depois.jpg" subtitle="House construction" title="Story House" data="2022"
+                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+
+                    </project-component>
+
+                    <project-component class="project-component" img-one=" assets/quarto2-antes.jpg"
+                        img-two="assets/quarto2-depois.jpg" subtitle="House construction" title="Story House"
+                        data="2022" text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                        ref="www.google.com.br">
+
+                    </project-component>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="plan section" id="plan">
+            <span class="section__subtitle">NOSSOS PLANOS</span>
+            <h2 class="section__title">Contrate nossos planos</h2>
+            <div class="plan__container container grid">
+                <div class="plan__content grid">
+                    <plan-card icon="ri-vip-crown-line" title="Projeto Executivo"
+                        description="Que tal ter um checklist completo para te guiar?" price="2x R$6,77"
+                        period="ou R$ 12,90 à vista." billingInfo="Projeto cheio de detalhes!"
+                        features="Serviços, Orçamento, Execução, Check" ref="www.google.com.br">
+
+                    </plan-card>
+
+                    <plan-card icon="ri-building-line" title="Manual - Condomínios"
+                        description="Que tal ter um checklist completo para te guiar?" price="6x R$5,57"
+                        period="ou R$ 29,90 à vista." billingInfo="Projeto cheio de detalhes!"
+                        features="Serviços, Orçamento, Execução, Check" ref="www.google.com.br">
+
+                    </plan-card>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">CONTATO</span>
+            <h2 class="section__title">Envie um email!</h2>
+
+            <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+                <div class="contact__content">
+                    <input type="text" name="user_name" placeholder="Nome" required class="contact__input">
+                    <input type="email" name= "user_email" placeholder="Email" required class="contact__input">
+                    <input type="tel" name="user_phone" placeholder="Telefone" required class="contact__input">
+                    <textarea name="user_message" cols="30" rows="4" placeholder="Mensagem" required
+                        class="contact__input contact__area"></textarea>
+                    <button type="submit"class="button contact__button">Enviar</button>
+                    <p class="contact__message" id="contact-message"></p>
+                </div>
+
+
+            </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container container grid" id="footer">
+                <div class="footer__data">
+                    <img class="footer__logo" src="assets/LOGO-4.png" alt="">
+                    </a>
+                    <p class="footer__description">
+                        Estamos aqui para te ajudar
+                        a deixar o seu ambiente
+                        mais agradável!
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <address class="footer__email"> <i class="ri-mail-line"></i> 9TfZQ@example.com</address>
+                    <div>
+                        <h3 class="footer__title">Contato: (93) 93939393</h3>
+
+
+                        <div class="footer__content grid">
+
+                            <div class="footer_social">
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <i class="ri-facebook-circle-line"></i>
+                                </a>
+
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+
+                                <a href="#" target="_blank" class="footer__social-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="footer__copy">
+                        &#169; Caio Eduardo. Todos os direitos reservados.
+                    </span>
+                </div>
+
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+.service {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    padding: 20px;
+}
+
+.service .section__subtitle {
+    margin-top: 3rem;
+}
+
+.content {
+    padding: 0 10vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.service-card {
+    flex: 0 0 auto;
+    width: 280px;
+    height: 450px;
+    margin-right: 80px;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 8vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 10; /* Verifique se está acima de outros elementos */
+}
+
+.service .button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    height: 200px;
+    width: auto;
+}
+
+.service button i {
+    font-size: 2rem;
+    color: var(--dark-purple);
+}
+
+.service button:first-of-type {
+    left: 0;
+    transform: translate(0%, 5%);
+}
+
+.service button:last-of-type {
+    right: 0;
+    transform: translate(-5%, 5%);
+}
+
+
+
+
+/* Media Query para telas muito pequenas */
+@media screen and (max-width: 360px) {
+    .content {
+        padding: 0 1rem !important;
+    }
+
+ 
+}
+
+@media screen and (max-width: 390px) {
+    .content {
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+}
+
+/* Ajustes para telas maiores */
+@media screen and (min-width: 740px) {
+
+    .service{
+        padding-top: 4rem;
+    }
+    .service__data {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content {
+        width: 50%;
+        padding: 0 2rem;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        width: 30vw;
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .pre-btn,
+    .nxt-btn {
+        width: 20vw;
+    }
+}

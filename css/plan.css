@@ -1,0 +1,56 @@
+.plan {
+    background-color: var(--white-color);
+}
+
+.plan__container {
+    margin-bottom: 20rem;
+    max-width: 1200px; /* Largura máxima para centralização */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    justify-items: center;
+}
+
+.plan__content {
+    display: grid; /* Mantém o layout de grid */
+    gap: 20px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+    grid-template-columns: repeat(1, 1fr); /* Define a coluna padrão para telas menores */
+    
+}
+
+@media screen and (min-width: 540px) {
+    .plan__content {
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna por padrão */
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .plan__content {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas maiores */
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1150px) {
+    .plan__content {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas acima de 1200px */
+        justify-items: center; /* Centraliza os itens dentro da grid */
+        gap: 5rem;
+    }
+
+    .plan__container{
+        max-width: 1000px;
+    }
+}
+
+/* Adicionando estilos para os cartões para garantir que eles se ajustem corretamente */
+.plan-card {
+    background-color: #f8f8f8; /* Cor de fundo para os cartões */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    transition: transform 0.2s; /* Efeito de transição */
+}
+
+.plan-card:hover {
+    transform: translateY(-5px); /* Levanta o cartão ao passar o mouse */
+}
